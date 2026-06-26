@@ -1,81 +1,206 @@
 # CivicAI 🚀
 
-An AI-powered civic grievance management platform that enables citizens to report public issues using images, geolocation, and natural language. CivicAI leverages AI for automated severity assessment, department classification, and authority dashboards to streamline issue reporting and resolution.
+> AI-Powered Municipal Incident Intelligence & Smart Civic Grievance Platform
 
-## 🌐 Live Demo
+CivicAI is an AI-driven civic issue reporting and municipal incident management platform that helps citizens report public infrastructure problems while enabling government authorities to prioritize, analyze, and manage incidents through intelligent triage and real-time dashboards.
+
+Instead of simply collecting complaints, CivicAI uses Google's Gemini AI to analyze uploaded images, estimate severity, classify incidents, recommend dispatch actions, assess public safety risks, and assist municipal authorities in making faster decisions.
+
+---
+
+## 🌍 Live Demo
 
 https://civicai-92627368025.us-west1.run.app
 
-## ✨ Features
+---
 
-- 📸 Image-based complaint submission
-- 🤖 AI-powered severity assessment
-- 🏷️ Automatic department classification
-- 📍 Geolocation support
-- 📊 Authority dashboard
-- 🔍 Complaint tracking
-- 📈 Analytics and statistics
-- 🚨 Priority-based issue management
+# ✨ Features
 
-## 🛠️ Tech Stack
+## 👤 Citizen Portal
+
+- Report civic issues with title and description
+- Upload images or capture live evidence
+- Automatic GPS detection
+- Interactive Google Maps location pinning
+- Address/Landmark support
+- AI-powered complaint analysis
+- Complaint history dashboard
+- Search, filter and sort reports
+- SLA progress tracking
+- View complete AI diagnostics
+
+---
+
+## 🤖 Gemini AI Analysis
+
+After submission, Gemini AI automatically performs:
+
+- Image understanding
+- Incident classification
+- Severity scoring (1–5)
+- Confidence estimation
+- Fake/Anomaly detection
+- Department routing
+- Estimated repair timeline
+- Safety recommendations
+- Dispatch recommendations
+- AI reasoning & explanation
+
+---
+
+## 🗺 Interactive GIS Dashboard
+
+- Live complaint map
+- Google Maps integration
+- Heatmap visualization
+- Cluster mode
+- Pin mode
+- Severity filters
+- Department filters
+- Nearby incident discovery
+
+---
+
+## 🏛 Municipal Authority Panel
+
+Designed for government departments.
+
+Includes:
+
+- Total cases
+- Pending cases
+- Critical hazards
+- Resolved reports
+- Department analytics
+- Incident lifecycle statistics
+- Risk Index
+- Priority Management
+- Complaint Ledger
+- Dispatch Management
+- Case Triage
+
+---
+
+## 📊 AI Telemetry
+
+Each complaint contains:
+
+- Severity Score
+- AI Confidence
+- Estimated Repair Time
+- Fake Risk
+- Department Classification
+- Recommended Dispatch Actions
+- Citizen Safety Precautions
+- AI Explanation
+- Location Intelligence
+
+---
+
+## 🌙 UI Features
+
+- Modern responsive interface
+- Dark Mode / Light Mode
+- Mobile-friendly layout
+- Interactive cards
+- Clean dashboard visualization
+
+---
+
+# 🛠 Tech Stack
+
+Frontend
 
 - Next.js
 - React
 - TypeScript
 - Tailwind CSS
+
+Artificial Intelligence
+
 - Google Gemini API
-- Google Maps API
-- Firebase / Cloud Services
-- Google Cloud
 
-## 🚀 Getting Started
+Maps & Location
 
-### Prerequisites
+- Google Maps JavaScript API
+- Geolocation API
 
-- Node.js 18+
-- Gemini API Key
+Deployment
 
-### Installation
+- Google Cloud Run
+
+---
+
+# 📂 Project Structure
+
+```
+app/
+components/
+lib/
+hooks/
+public/
+types/
+```
+
+---
+
+# 🚀 Getting Started
+
+## Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/CivicAI.git
+git clone https://github.com/AnshiPandey/CivicAI.git
 
 cd CivicAI
+```
 
+## Install Dependencies
+
+```bash
 npm install
 ```
 
-Create a `.env.local` file:
+## Configure Environment Variables
+
+Create a `.env.local` file.
 
 ```env
 GEMINI_API_KEY=YOUR_API_KEY
+NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=YOUR_GOOGLE_MAPS_API_KEY
 ```
 
-Run the development server:
+## Run Development Server
 
 ```bash
 npm run dev
 ```
 
-Open http://localhost:3000 in your browser.
+Visit
 
-## 📸 Screenshots
-
-_Add screenshots of the Citizen Dashboard, Complaint Submission, and Authority Dashboard._
-
-## 📌 Future Enhancements
-
-- User authentication
-- Push notifications
-- Multilingual support
-- Mobile application
-- Real-time complaint updates
-- Predictive analytics
-
-## 👨‍💻 Author
-
-Anshi Pandey
+```
+http://localhost:3000
+```
 
 ---
 
-Made with ❤️ to improve civic issue reporting through AI.
+
+# Future Enhancements
+
+- User Authentication
+- Notification System
+- Mobile Application
+- Department Login
+- Real-time Status Updates
+- Multilingual Support
+- Predictive Analytics
+- Complaint Verification using Vision Models
+
+---
+
+# Author
+
+**Anshi Pandey**
+
+---
+
+Made with ❤️ using Google Gemini AI, Google Maps Platform, Next.js and React.
