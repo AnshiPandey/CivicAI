@@ -1,0 +1,19 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Safety fallback
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Rules for complaints collection
+    match /complaints/{complaintId} {
+      allow read: if true;
+      allow create: if request.resource.data.title is string 
+                    && request.resource.data.description is string;
+      allow update: if request.resource.data.title is string;
+      allow delete: if false;
+    }
+  }
+}

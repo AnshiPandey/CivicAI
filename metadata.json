@@ -1,0 +1,11 @@
+{
+  "name": "CivicAI",
+  "description": "AI-powered civic complaint management web application featuring automated complaint routing, severity assessment, interactive Google Maps, and real-time dashboard analytics.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

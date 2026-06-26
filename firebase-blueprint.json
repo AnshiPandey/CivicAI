@@ -1,0 +1,135 @@
+{
+  "entities": {
+    "Complaint": {
+      "title": "Complaint",
+      "description": "A user-reported municipal infrastructure or community complaint",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier of the complaint"
+        },
+        "title": {
+          "type": "string",
+          "description": "Title of the complaint"
+        },
+        "description": {
+          "type": "string",
+          "description": "Detailed description of the issue"
+        },
+        "department": {
+          "type": "string",
+          "description": "Assigned municipal department"
+        },
+        "severity": {
+          "type": "integer",
+          "description": "Severity scale from 1 to 5"
+        },
+        "priority": {
+          "type": "string",
+          "description": "Priority level of the complaint"
+        },
+        "status": {
+          "type": "string",
+          "description": "Current resolution status of the complaint"
+        },
+        "estimatedResolutionTime": {
+          "type": "string",
+          "description": "Estimated time to resolve"
+        },
+        "suggestedAction": {
+          "type": "string",
+          "description": "Recommended initial response action"
+        },
+        "images": {
+          "type": "array",
+          "description": "Array of base64 image strings or URLs"
+        },
+        "latitude": {
+          "type": "number",
+          "description": "Latitude coordinate of the issue location"
+        },
+        "longitude": {
+          "type": "number",
+          "description": "Longitude coordinate of the issue location"
+        },
+        "address": {
+          "type": "string",
+          "description": "Human-readable address of the location"
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "ISO timestamp of report creation"
+        },
+        "reportedBy": {
+          "type": "string",
+          "description": "UID of reporting user"
+        },
+        "reporterName": {
+          "type": "string",
+          "description": "Display name of reporting user"
+        },
+        "assignedOfficer": {
+          "type": "string",
+          "description": "Name or identifier of assigned officer"
+        },
+        "resolutionNotes": {
+          "type": "string",
+          "description": "Notes added upon resolution"
+        },
+        "isFake": {
+          "type": "boolean",
+          "description": "Flag indicating if the complaint was verified as fake"
+        },
+        "estimatedRepairTime": {
+          "type": "string",
+          "description": "Estimated repair or dispatch time"
+        },
+        "recommendedAction": {
+          "type": "string",
+          "description": "Specific action item for municipal workers"
+        },
+        "confidence": {
+          "type": "number",
+          "description": "Confidence score of AI analysis"
+        },
+        "citizenTips": {
+          "type": "string",
+          "description": "AI-generated safety tips for citizens"
+        },
+        "fakeComplaintProbability": {
+          "type": "number",
+          "description": "Probability score that this is a spam/fake report"
+        },
+        "detectedIssues": {
+          "type": "array",
+          "description": "List of issues detected from camera input"
+        },
+        "aiReasoning": {
+          "type": "string",
+          "description": "Underlying AI dispatch reasoning"
+        }
+      },
+      "required": [
+        "title",
+        "description",
+        "department",
+        "severity",
+        "priority",
+        "status",
+        "latitude",
+        "longitude",
+        "address",
+        "createdAt",
+        "reportedBy",
+        "reporterName"
+      ]
+    }
+  },
+  "firestore": {
+    "/complaints/{complaintId}": {
+      "schema": "Complaint",
+      "description": "User reported public works/infrastructure complaints"
+    }
+  }
+}
