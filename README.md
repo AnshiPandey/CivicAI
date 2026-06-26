@@ -1,20 +1,81 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# CivicAI 🚀
 
-# Run and deploy your AI Studio app
+An AI-powered civic grievance management platform that enables citizens to report public issues using images, geolocation, and natural language. CivicAI leverages AI for automated severity assessment, department classification, and authority dashboards to streamline issue reporting and resolution.
 
-This contains everything you need to run your app locally.
+## 🌐 Live Demo
 
-View your app in AI Studio: https://ai.studio/apps/84a13026-0689-4e15-ba4d-474bc60b3eb9
+https://civicai-92627368025.us-west1.run.app
 
-## Run Locally
+## ✨ Features
 
-**Prerequisites:**  Node.js
+- 📸 Image-based complaint submission
+- 🤖 AI-powered severity assessment
+- 🏷️ Automatic department classification
+- 📍 Geolocation support
+- 📊 Authority dashboard
+- 🔍 Complaint tracking
+- 📈 Analytics and statistics
+- 🚨 Priority-based issue management
 
+## 🛠️ Tech Stack
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Google Gemini API
+- Google Maps API
+- Firebase / Cloud Services
+- Google Cloud
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- Gemini API Key
+
+### Installation
+
+```bash
+git clone https://github.com/YOUR_USERNAME/CivicAI.git
+
+cd CivicAI
+
+npm install
+```
+
+Create a `.env.local` file:
+
+```env
+GEMINI_API_KEY=YOUR_API_KEY
+```
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+Open http://localhost:3000 in your browser.
+
+## 📸 Screenshots
+
+_Add screenshots of the Citizen Dashboard, Complaint Submission, and Authority Dashboard._
+
+## 📌 Future Enhancements
+
+- User authentication
+- Push notifications
+- Multilingual support
+- Mobile application
+- Real-time complaint updates
+- Predictive analytics
+
+## 👨‍💻 Author
+
+Anshi Pandey
+
+---
+
+Made with ❤️ to improve civic issue reporting through AI.
